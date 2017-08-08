@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Константин Денисенко](https://up.htmlacademy.ru/htmlcss/18/user/238019).
-* Наставник: Максим Клевцов.
+* Наставник: [Максим Клевцов](https://htmlacademy.ru/profile/maxklevtsov).
 
 ---
 
