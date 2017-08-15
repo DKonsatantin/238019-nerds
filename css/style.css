@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #283136;
+    line-height: 1.5;
+}
+
+.modal-text {
+    font-size: 45px;
+    font-family: "Roboto";
+    color: rgb(0, 0, 0);
+    line-height: 1;
+}
+
+.catalog-welcome {
+    font-size: 55px;
+    font-family: "Roboto";
+    color: rgb(0, 0, 0);
+    line-height: 1;
+}
+
+.services-item-name {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 1.25;
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
-                <img src="http://placehold.it/150x100" alt="Логотип">
+                <img src="img/nerds-logo.svg" alt="Логотип">
             </a>
             <ul class="site-navigation">
                 <li><a href="index.html">Студия</a></li>
@@ -22,7 +23,7 @@
                 <li class="basket-link"><a href="#">Корзина</a></li>
             </ul>
         </nav>
-        <h2>Магазин готовых шаблонов</h2>
+        <h2 class="catalog-welcome">Магазин готовых шаблонов</h2>
     </header>
     <main class="container">
         <section class="filtres">
@@ -75,7 +76,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <img src="#" alt="Sedona">
+                    <img src="img/img-sedona.jpg" alt="Sedona">
                     <div class="item-description">
                         <p class="item-title">Sedona</p>
                         <p class="item-text">Информационный сайт для туристов</p>
@@ -91,7 +92,7 @@
                             <span></span>
                             <span></span>
                         </div>
-                        <img src="#" alt="Pink">
+                        <img src="img/img-pink.jpg" alt="Pink">
                         <div class="item-description">
                             <p class="item-title">Pink</p>
                             <p class="item-text">Проложение для новых знакомств</p>
@@ -99,77 +100,83 @@
                         </div>
                     </div>
                 </div>
-                <div class="items">
-                    <div class="item-card">
-                        <div class="item-img">
-                            <div class="item-header">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <img src="#" alt="Бородинский">
-                            <div class="item-description">
-                                <p class="item-title">Бородинский</p>
-                                <p class="item-text">Барбершоп</p>
-                                <a href="#" class="item-price">19 900 руб.</a>
-                            </div>
+            </div>
+            <div class="items">
+                <div class="item-card">
+                    <div class="item-img">
+                        <div class="item-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="img/img-barbershop.jpg" alt="Бородинский">
+                        <div class="item-description">
+                            <p class="item-title">Бородинский</p>
+                            <p class="item-text">Барбершоп</p>
+                            <a href="#" class="item-price">19 900 руб.</a>
                         </div>
                     </div>
-                    <div class="items">
-                        <div class="item-card">
-                            <div class="item-img">
-                                <div class="item-header">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <img src="#" alt="Mishka">
-                                <div class="item-description">
-                                    <p class="item-title">Mishka</p>
-                                    <p class="item-text">Вязаные изделия для дома</p>
-                                    <a href="#" class="item-price">24 900 руб.</a>
-                                </div>
-                            </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item-card">
+                    <div class="item-img">
+                        <div class="item-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
-                        <div class="items">
-                            <div class="item-card">
-                                <div class="item-img">
-                                    <div class="item-header">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                    <img src="#" alt="#">
-                                    <div class="item-description">
-                                        <p class="item-title">Lorem</p>
-                                        <p class="item-text">Lorem upsum dolor</p>
-                                        <a href="#" class="item-price">9 900 руб.</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="items">
-                                <div class="item-card">
-                                    <div class="item-img">
-                                        <div class="item-header">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <img src="#" alt="#">
-                                        <div class="item-description">
-                                            <p class="item-title">Lorem</p>
-                                            <p class="item-text">Lorem upsum dolor</p>
-                                            <a href="#" class="item-price">9 900 руб.</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pagination">
-                                    <p class="active">1</p>
-                                    <a href="#">2</a>
-                                    <a href="#">3</a>
-                                    <a class="next" href="#">Следующая</a>
-                                </div>
-                            </div>
+                        <img src="img/img-mishka.jpg" alt="Mishka">
+                        <div class="item-description">
+                            <p class="item-title">Mishka</p>
+                            <p class="item-text">Вязаные изделия для дома</p>
+                            <a href="#" class="item-price">24 900 руб.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item-card">
+                    <div class="item-img">
+                        <div class="item-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="img/img-aplus.jpg" alt="#">
+                        <div class="item-description">
+                            <p class="item-title">Lorem</p>
+                            <p class="item-text">Lorem upsum dolor</p>
+                            <a href="#" class="item-price">9 900 руб.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item-card">
+                    <div class="item-img">
+                        <div class="item-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="img/img-kvast.jpg" alt="#">
+                        <div class="item-description">
+                            <p class="item-title">Lorem</p>
+                            <p class="item-text">Lorem upsum dolor</p>
+                            <a href="#" class="item-price">9 900 руб.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <p class="active">1</p>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a class="next" href="#">Следующая</a>
+        </div>
+        </div>
     </main>
     <footer class="main-footer">
         <section class="map">
