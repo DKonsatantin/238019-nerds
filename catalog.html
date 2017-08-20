@@ -30,17 +30,26 @@
             <form action="#" method="get" class="filter">
                 <fieldset>
                     <legend>Стоимость:</legend>
+                    <label for="">
                     <input type="range" min="0" max="15000" step="1" value="">
+                    </label>
                     <div class="price-control">
-                        от <input class="min-price" type="text" value="0"> до <input class="max-price" type="text" value="15 000">
+                        <label for="">от <input class="min-price" type="text" value="0"> </label>
+                        <label for="">до <input class="max-price" type="text" value="15 000"></label>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Cетка:</legend>
                     <ul>
-                        <li class="filter-option"><input type="radio"> Адаптивная</li>
-                        <li class="filter-option"><input type="radio">Фиксированная</li>
-                        <li class="filter-option"><input type="radio">Резиновая</li>
+                        <li class="filter-option">
+                            <label for=""> <input type="radio"> Адаптивная</label>
+                        </li>
+                        <li class="filter-option">
+                            <label for=""><input type="radio">Фиксированная</label>
+                        </li>
+                        <li class="filter-option">
+                            <label for=""> <input type="radio">Резиновая</label>
+                        </li>
                     </ul>
                 </fieldset>
                 <fieldset>
@@ -185,7 +194,7 @@
                 <p>191186,Санкт-Петербург, ул.Б.Конюшенная,д.19/8
                     <br> тел.+7(812)275-75-75
                 </p>
-                <button class="button" type="submit">Напишите нам</button>
+                <button class="button" type="button">Напишите нам</button>
             </div>
         </section>
         <section class="footer-social">

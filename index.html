@@ -45,6 +45,7 @@
     </header>
     <main class="container">
         <section class="services">
+            <h2 class="visually-hidden">Наши услуги</h2>
             <ul class="services-item">
                 <li class="services-item-sites">
                     <img src="img/site.jpg">
@@ -67,6 +68,7 @@
             </ul>
         </section>
         <section class="about">
+            <h2 class="visually-hidden">О нас</h2>
             <div class="about-left">
                 <b>Мы-маленькая,но гордая дизайн-студия из Краснодара.</b>
                 <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет превыше креатива. Работаем не покладая рук,как роботы.</p>
@@ -133,11 +135,20 @@
     <section class="modal">
         <h2 class="modal-text">Напишите нам</h2>
         <form action="" class="modal-form" method="post">
-            <p class="modal-form-name">Ваше имя:<input type="name" name="name" placeholder="Представтесь,пожалуйста"></p>
-            <p class="modal-form-email">Ваш e-mail:<input type="email" name="email" placeholder="Для отправки ответа"></p>
-            <p class="modal-form-text">Текст письма:<textarea rows="" cols="" placeholder="В свободной форме"></textarea></p>
-            <button type="submit" class="modal-button">Отправить</button>
-            <span class="modal-close">x</span>
+            <p class="modal-form-name">
+                <label for="modal-name">Ваше имя:</label>
+                <input id="modal-name" type="name" name="name" placeholder="Представтесь,пожалуйста">
+            </p>
+            <p class="modal-form-email">
+                <label for="modal-email">Ваш e-mail:</label>
+                <input id="modal-email" type="email" name="email" placeholder="Для отправки ответа">
+            </p>
+            <p class="modal-form-text">
+                <label for="modal-text">Текст письма:</label>
+                <textarea rows="" cols="" placeholder="В свободной форме"></textarea>
+            </p>
+            <button type="button" class="modal-button">Отправить</button>
+            <button class="modal-close" type="button">Закрыть</button>
         </form>
     </section>
 </body>
