@@ -3,15 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-header-logo"><img src="img/nerds-logo.svg" alt="Логотип"></a>
+            <a class="main-header-logo"><img src="img/nerds-logo.svg" alt="Логотип" width="160" height="90"></a>
             <ul class="site-navigation">
-                <li><a href="index.html">Студия</a></li>
+                <li><a class="active" href="index.html">Студия</a></li>
                 <li><a href="clients.html">Клиенты</a></li>
                 <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
@@ -48,19 +50,19 @@
             <h2 class="visually-hidden">Наши услуги</h2>
             <ul class="services-item">
                 <li class="services-item-sites">
-                    <img src="img/site.jpg">
+
                     <h3 class="services-item-name">Веб-Сайты</h3>
                     <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                     <a href="#" class="services-btn-site">Заказать </a>
                 </li>
                 <li class="services-item-apps">
-                    <img src="img/apps.jpg">
+
                     <h3 class="services-item-name">Приложения</h3>
                     <p>Покорите топ-10 приложений в AppStore и Google play</p>
                     <a href="#" class="services-btn-app">Заказать </a>
                 </li>
                 <li class="services-item-presentation">
-                    <img src="img/presentation.jpg">
+
                     <h3 class="services-item-name">Презентации</h3>
                     <p>Вы даже не подозреваете, насколько вы изумительны!</p>
                     <a href="#" class="services-btn-presentation">Заказать </a>
@@ -70,38 +72,39 @@
         <section class="about">
             <h2 class="visually-hidden">О нас</h2>
             <div class="about-left">
-                <b>Мы-маленькая,но гордая дизайн-студия из Краснодара.</b>
-                <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет превыше креатива. Работаем не покладая рук,как роботы.</p>
-                <b>Выполняем заказы на разработку:</b>
+                <b class="about-left-head">Мы-маленькая,но гордая<br> дизайн-студия из Краснодара.</b>
+                <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет<br> превыше креатива. Работаем не покладая рук,как роботы.</p>
+                <b class="about-left-develop">Выполняем заказы на разработку:</b>
                 <ul class="about-info">
-                    <li class="about-info-item">Веб-сайтов любой сложности</li>
+                    <li class="about-info-item"> Веб-сайтов любой сложности</li>
                     <li class="about-info-item"> Мобильных приложений для iOS и Android</li>
                     <li class="about-info-item">Слайдшоу и видео для коорпаротивных презентаций</li>
                 </ul>
             </div>
             <div class="about-right">
-                <img src="img/nerds-img.jpg">
-                <b>С 2004 года любим точность во всем</b>
+
+                <b>С 2004 года любим точность во всем:</b>
                 <table class="about-table">
                     <tr>
-                        <td>146%</td>
+                        <td>146<sup>%</sup></td>
                         <td>Уровень самооотдачи</td>
                     </tr>
                     <tr>
-                        <td>100%</td>
+                        <td>100<sup>%</sup></td>
                         <td>Соблюдение сроков</td>
                     </tr>
                     <tr>
-                        <td>50%</td>
+                        <td>50<sup>%</sup></td>
                         <td>Минимальная предоплата</td>
                     </tr>
                 </table>
             </div>
         </section>
-        <section class="partners">
+        <section class="partnes">
+            <h2 class="visually-hidden">Наши партнеры</h2>
             <ul class="partnes-site">
                 <li>
-                    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="HTML Academy"></a>
+                    <a class="partnes-site1" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="HTML Academy"></a>
                 </li>
                 <li>
                     <a href="#"><img src="img/logo-2.png" alt="Бородинский"></a>
@@ -114,6 +117,7 @@
                 </li>
             </ul>
         </section>
+
     </main>
     <footer class="main-footer">
         <section class="map">
@@ -137,15 +141,15 @@
         <form action="" class="modal-form" method="post">
             <p class="modal-form-name">
                 <label for="modal-name">Ваше имя:</label>
-                <input id="modal-name" type="name" name="name" placeholder="Представтесь,пожалуйста">
+                <input class="modal-input" id="modal-name" type="name" name="name" placeholder="Представтесь,пожалуйста">
             </p>
             <p class="modal-form-email">
                 <label for="modal-email">Ваш e-mail:</label>
-                <input id="modal-email" type="email" name="email" placeholder="Для отправки ответа">
+                <input class="modal-input" id="modal-email" type="email" name="email" placeholder="Для отправки ответа">
             </p>
             <p class="modal-form-text">
                 <label for="modal-text">Текст письма:</label>
-                <textarea rows="" cols="" placeholder="В свободной форме"></textarea>
+                <textarea class="modal-input" rows="" cols="" placeholder="В свободной форме"></textarea>
             </p>
             <button type="button" class="modal-button">Отправить</button>
             <button class="modal-close" type="button">Закрыть</button>

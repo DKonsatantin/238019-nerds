@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -11,12 +13,12 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
-                <img src="img/nerds-logo.svg" alt="Логотип">
+                <img src="img/nerds-logo.svg" alt="Логотип" width="160" height="90">
             </a>
             <ul class="site-navigation">
                 <li><a href="index.html">Студия</a></li>
                 <li><a href="clients.html">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
+                <li><a class="active" href="catalog.html">Магазин</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="basket">
@@ -25,7 +27,7 @@
         </nav>
         <h2 class="catalog-welcome">Магазин готовых шаблонов</h2>
     </header>
-    <main class="container">
+    <main class="catalog-container">
         <section class="filtres">
             <form action="#" method="get" class="filter">
                 <fieldset>
@@ -55,14 +57,14 @@
                 <fieldset>
                     <legend>Особенности:</legend>
                     <ul>
-                        <li class="filter-option"><input type="checkbox">Слайдер</li>
+                        <li class="filter-option"><input type="checkbox" checked>Слайдер</li>
                         <li class="filter-option"><input type="checkbox">Блок преимуществ</li>
-                        <li class="filter-option"><input type="checkbox"> Новости</li>
+                        <li class="filter-option"><input type="checkbox" checked> Новости</li>
                         <li class="filter-option"><input type="checkbox"> Галерея</li>
                         <li class="filter-option"><input type="checkbox">Корзина</li>
                     </ul>
                 </fieldset>
-                <button type="submit" class="filter-button">Показать</button>
+                <a href="#" class="filter-button">Показать</a>
             </form>
         </section>
         <div class="sorting">
@@ -180,7 +182,7 @@
             </div>
         </div>
         <div class="pagination">
-            <p class="active">1</p>
+            <p class="active-page">1</p>
             <a href="#">2</a>
             <a href="#">3</a>
             <a class="next" href="#">Следующая</a>
