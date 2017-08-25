@@ -30,8 +30,8 @@
     <main class="catalog-container">
         <section class="filtres">
             <form action="#" method="get" class="filter">
-                <fieldset>
-                    <legend>Стоимость:</legend>
+                <fieldset class="catalog-filter">
+                    <legend class="catalog-filter-name">Стоимость:</legend>
                     <label for="">
                     <input type="range" min="0" max="15000" step="1" value="">
                     </label>
@@ -40,8 +40,8 @@
                         <label for="">до <input class="max-price" type="text" value="15 000"></label>
                     </div>
                 </fieldset>
-                <fieldset>
-                    <legend>Cетка:</legend>
+                <fieldset class="catalog-filter">
+                    <legend class="catalog-filter-name">Cетка:</legend>
                     <ul>
                         <li class="filter-option">
                             <label for=""> <input type="radio"> Адаптивная</label>
@@ -54,8 +54,8 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
-                    <legend>Особенности:</legend>
+                <fieldset class="catalog-filter">
+                    <legend class="catalog-filter-name">Особенности:</legend>
                     <ul>
                         <li class="filter-option"><input type="checkbox" checked>Слайдер</li>
                         <li class="filter-option"><input type="checkbox">Блок преимуществ</li>
