@@ -58,8 +58,8 @@ body {
 
 .main-header-logo {
     display: block;
-    margin-bottom: 5px;
-    margin-left: 65px;
+    background-color: rgba(14, 143, 215, 0.69);
+    margin-top: 40px;
 }
 
 .main-header {
@@ -74,6 +74,7 @@ body {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-align: center;
+    background-color: rgba(20, 215, 134, 0.86)
 }
 
 .site-navigation {
@@ -86,8 +87,9 @@ body {
     font-weight: 700;
     width: 440px;
     height: 20px;
-    margin-top: 65px;
-    margin-right: 32px;
+    background-color: rgba(19, 171, 108, 0.83);
+    margin-right: 82px;
+    margin-top: 63px;
 }
 
 .site-navigation a,
@@ -95,7 +97,6 @@ body {
     display: block;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    vertical-align: middle;
 }
 
 .site-navigation a:hover {
@@ -150,6 +151,7 @@ body {
     position: relative;
     width: 1160px;
     height: 430px;
+    right: 30px;
 }
 
 .slider input[type=radio] {
@@ -195,7 +197,7 @@ body {
 }
 
 .slide-text {
-    margin-top: 47px;
+    margin-top: 45px;
     width: 380px;
     color: #000000;
 }
@@ -212,6 +214,7 @@ body {
     line-height: 55px;
     font-weight: bold;
     color: black;
+    margin-top: ;
 }
 
 .slider-btn {
@@ -280,9 +283,11 @@ body {
 }
 
 .services {
+    display: block;
     border-bottom: 2px solid #eeeeee;
     padding-top: 58px;
     padding-bottom: 58px;
+    background-color: rgba(102, 102, 102, 0.89)
 }
 
 .services-item {
@@ -291,6 +296,7 @@ body {
     justify-content: space-between;
     list-style: none;
     text-align: left;
+    align-content: flex-start;
 }
 
 .services-btn-site {
@@ -359,7 +365,6 @@ body {
 .about-left-head {
     font-size: 45px;
     font-weight: 500;
-    line-height: 45px;
     margin-top: 70px;
     font-weight: bold;
     white-space: nowrap;
@@ -454,6 +459,7 @@ body {
 }
 
 .partnes {
+    margin-bottom: 80px;
     border-bottom: 2px solid #eeeeee;
     min-height: 184px;
 }
@@ -487,11 +493,14 @@ body {
 .main-footer {}
 
 .map {
+    display: block;
+    width: 100%;
     min-height: 420px;
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
+    z-index: 1;
 }
 
 .map-marker {
@@ -502,17 +511,18 @@ body {
     height: 190px;
     background-image: url("../img/map-marker.png");
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 .adress {
     position: relative;
     text-align: left;
     top: 50px;
-    left: 270px;
+    left: 400px;
     width: 320px;
     height: 305px;
-    border-radius: 3px;
     background-color: #ffffff;
+    z-index: 10;
 }
 
 .adress-wrap {
