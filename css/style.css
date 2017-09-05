@@ -58,7 +58,6 @@ body {
 
 .main-header-logo {
     display: block;
-    background-color: rgba(14, 143, 215, 0.69);
     margin-top: 40px;
 }
 
@@ -74,7 +73,6 @@ body {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-align: center;
-    background-color: rgba(20, 215, 134, 0.86)
 }
 
 .site-navigation {
@@ -87,7 +85,6 @@ body {
     font-weight: 700;
     width: 440px;
     height: 20px;
-    background-color: rgba(19, 171, 108, 0.83);
     margin-right: 82px;
     margin-top: 63px;
 }
@@ -115,7 +112,6 @@ body {
     position: relative;
     margin-top: 75px;
     font-weight: 700;
-    background-color: rgba(0, 0, 0, 0.56);
 }
 
 .basket,
@@ -151,10 +147,9 @@ body {
     position: relative;
     width: 1160px;
     height: 430px;
-    right: 30px;
 }
 
-.slider input[type=radio] {
+.slides input[type=radio] {
     display: none;
 }
 
@@ -214,7 +209,6 @@ body {
     line-height: 55px;
     font-weight: bold;
     color: black;
-    margin-top: ;
 }
 
 .slider-btn {
@@ -243,7 +237,7 @@ body {
 .slide:nth-child(1) {
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
-    background-position: 430px 7px;
+    background-position: 430px -3px;
     ;
 }
 
@@ -284,10 +278,8 @@ body {
 
 .services {
     display: block;
-    border-bottom: 2px solid #eeeeee;
     padding-top: 58px;
     padding-bottom: 58px;
-    background-color: rgba(102, 102, 102, 0.89)
 }
 
 .services-item {
@@ -296,7 +288,13 @@ body {
     justify-content: space-between;
     list-style: none;
     text-align: left;
-    align-content: flex-start;
+    padding: 0;
+    margin-right: 60px;
+}
+
+.services-item p {
+    width: 300px;
+    line-height: 18px;
 }
 
 .services-btn-site {
@@ -364,10 +362,9 @@ body {
 
 .about-left-head {
     font-size: 45px;
+    line-height: 45px;
+    margin-top: 30px;
     font-weight: 500;
-    margin-top: 70px;
-    font-weight: bold;
-    white-space: nowrap;
 }
 
 .about-left-develop {
@@ -381,15 +378,14 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 800px;
-    background-color: rgba(0, 202, 116, 0.73)
+    width: 660px;
 }
 
 .about-table {
     position: relative;
-    top: 300px;
-    border-collapse: collapse;
-    background-color: rgba(154, 205, 50, 0.75);
+    top: 260px;
+    border-collapse: separate;
+    text-align: left;
 }
 
 .about-table-number {
@@ -409,29 +405,24 @@ body {
 .about {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 70px;
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
-    background-color: rgba(123, 16, 232, 0.87)
+    margin-top: 75px;
+    margin-bottom: 70px;
 }
 
 .about-right {
     width: 360px;
-    background-color: rgba(193, 49, 53, 0.80);
     background-image: url("../img/nerds-img.jpg");
-    background-position: 80% 20%;
+    background-position: 80% 15%;
     background-repeat: no-repeat;
-}
-
-.about-left p {
-    line-height: 24px;
 }
 
 .about-right p {
     position: relative;
-    top: 273px;
-    background-color: rgba(255, 255, 255, 0.75);
+    top: 233px;
+    margin-left: 5px;
+    padding: 0;
     line-height: 24px;
     font-weight: 900;
     text-align: center;
@@ -442,7 +433,6 @@ body {
     list-style: none;
     text-decoration: none;
     line-height: 24px;
-    background-color: rgba(180, 185, 187, 0.73)
 }
 
 .about-info li {
@@ -469,6 +459,8 @@ body {
     justify-content: space-between;
     list-style: none;
     text-align: center;
+    padding: 0;
+    margin-top: 40px;
 }
 
 .partnes-site li {
@@ -500,17 +492,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    z-index: 1;
-}
-
-.map-marker {
-    display: block;
-    position: absolute;
-    left: 1100px;
-    width: 231px;
-    height: 190px;
-    background-image: url("../img/map-marker.png");
-    background-repeat: no-repeat;
     z-index: 1;
 }
 
@@ -555,7 +536,7 @@ body {
 .main-footer {
     display: flex;
     justify-content: space-around;
-    min-height: 220px;
+    min-height: 200px;
 }
 
 .footer-social {
@@ -623,7 +604,7 @@ body {
 /*Всплывающая форма*/
 
 .modal {
-    display: none;
+    display: block;
     position: absolute;
     left: 400px;
     width: 960px;
@@ -636,13 +617,73 @@ body {
     font-size: 16px;
     line-height: 18px;
     font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-form {
+    padding: 54px 50px 50px 80px;
+}
+
+.modal-form p {
+    display: inline-block;
+}
+
+.modal-username {
+    width: 360px;
+    height: 50px;
+    margin-right: 35px;
+}
+
+.modal-usermail {
+    width: 360px;
+    height: 50px;
+}
+
+.modal-usertext {
+    width: 760px;
+    height: 120px;
+}
+
+.modal-button {
+    display: inline-block;
+    width: 260px;
+    height: 50px;
+    background-color: #fb565a;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.modal-button:hover {
+    background-color: #e24246;
+}
+
+.modal-close {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-close::before {
+    position: absolute;
+    bottom: 460px;
+    left: 820px;
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/close-cross.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
 }
 
 input[type="name"],
 input[type="email"],
 textarea {
-    border: 1px solid #d7dcde;
-    border-radius: 2px;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
     font: inherit;
     outline: none;
 }
