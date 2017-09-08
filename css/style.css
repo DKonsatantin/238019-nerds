@@ -152,28 +152,28 @@ input[type="radio"].visually-hidden {
 .slider {
     position: relative;
     width: 1160px;
-    height: 430px;
+    height: 425px;
 }
 
-.slider-controls input[type=radio] {
+.slider input[type=radio] {
     display: none;
 }
 
 .slider-controls {
     position: absolute;
-    bottom: 103px;
+    bottom: 97px;
     left: 55%;
     width: 200px;
     height: 18px;
-    margin-left: -100px;
+    margin-left: -158px;
     text-align: center;
     z-index: 1000;
 }
 
 .slider-controls label {
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     margin: 0 7px;
     background-color: #ffffff;
     border: 3px solid white;
@@ -195,7 +195,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-text {
-    margin-top: 45px;
+    padding-top: 70px;
     width: 380px;
     color: #000000;
 }
@@ -240,8 +240,7 @@ input[type="radio"].visually-hidden {
 .slide:nth-child(1) {
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
-    background-position: 430px -3px;
-    ;
+    background-position: 93% 10px;
 }
 
 .slide:nth-child(2) {
@@ -253,7 +252,7 @@ input[type="radio"].visually-hidden {
 .slide:nth-child(3) {
     background-image: url("../img/slide3.png");
     background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: 100% 13px;
 }
 
 .slide {
@@ -281,8 +280,9 @@ input[type="radio"].visually-hidden {
 
 .services {
     display: block;
-    padding-top: 58px;
-    padding-bottom: 58px;
+    padding-top: 63px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid #eee;
 }
 
 .services-item {
@@ -408,10 +408,9 @@ input[type="radio"].visually-hidden {
 .about {
     display: flex;
     justify-content: space-between;
-    border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
-    margin-top: 75px;
-    margin-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .about-right {
@@ -452,7 +451,7 @@ input[type="radio"].visually-hidden {
 }
 
 .partnes {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     border-bottom: 2px solid #eeeeee;
     min-height: 184px;
 }
@@ -463,7 +462,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
     text-align: center;
     padding: 0;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .partnes-site li {
@@ -527,13 +526,23 @@ input[type="radio"].visually-hidden {
     color: #666666;
 }
 
-.adress a {
+.adress-btn {
     padding: 17px 54px;
     border-radius: 3px;
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
     background-color: #fb565a
+}
+
+.adress-btn:hover {
+    background-color: #e24246;
+}
+
+.adress-btn:active {
+    background-color: #d7373b;
+    color: #e26f72;
+    box-shadow: inset 0 2px 0 0 #c13135;
 }
 
 .main-footer {
@@ -639,8 +648,6 @@ input[type="radio"].visually-hidden {
     animation-duration: 1s;
 }
 
-.modal-erroe {}
-
 .modal-form label {
     font-size: 16px;
     line-height: 18px;
@@ -689,6 +696,12 @@ input[type="radio"].visually-hidden {
     background-color: #e24246;
 }
 
+.modal-button:active {
+    background-color: #d7373b;
+    color: #e26f72;
+    box-shadow: inset 0 2px 0 0 #c13135;
+}
+
 .modal-close {
     background-color: transparent;
     border: none;
@@ -707,10 +720,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/close-cross.svg");
     background-repeat: no-repeat;
     opacity: 0.3;
-}
-
-.modal-close:hover {
-    opacity: 1;
+    cursor: pointer;
 }
 
 input[type="name"],
@@ -834,7 +844,9 @@ textarea:focus {
     background: #eeeeee;
 }
 
-.filtres {}
+.filtres {
+    display: block;
+}
 
 .catalog-filter {
     display: flex;
@@ -891,6 +903,14 @@ textarea:focus {
     opacity: 0.4;
 }
 
+.catalog-filter input[type="radio"]:hover+label::before {
+    opacity: 1;
+}
+
+.catalog-filter input[type="checkbox"]:hover+label::before {
+    opacity: 1;
+}
+
 .catalog-filter-name {
     padding-top: 15px;
     font-weight: bold;
@@ -902,12 +922,25 @@ textarea:focus {
     width: 260px;
     height: 50px;
     border: none;
+    border-radius: 2px;
     background-color: #eeeeee;
     text-transform: uppercase;
+    font-weight: 700;
     line-height: 18px;
     color: #000000;
     text-decoration: none;
     margin-top: 25px;
+    outline: none;
+}
+
+.filter-button:hover {
+    background-color: #dfdfdf;
+}
+
+.filter-button:active {
+    background-color: #d5d5d5;
+    color: #959595;
+    box-shadow: inset 0 2px 0 0 #bfbfbf;
 }
 
 .sorting {
