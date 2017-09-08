@@ -35,11 +35,12 @@
                     <label for="btn-1"></label>
                     <label for="btn-2"></label>
                     <label for="btn-3"></label>
-                </div>
-                <div class="slides">
                     <input type="radio" id="btn-1" name="toggle" checked>
                     <input type="radio" id="btn-2" name="toggle">
                     <input type="radio" id="btn-3" name="toggle">
+                </div>
+                <div class="slides">
+
 
                     <div class="slide">
                         <div class="slide-text">
@@ -195,21 +196,21 @@
             <h2 class="modal-text">Напишите нам</h2>
             <p class="modal-form-name">
                 <label for="modal-name">Ваше имя:</label>
-                <input class="modal-username" id="modal-name" type="name" name="name" placeholder="Представтесь,пожалуйста" required pattern="^[А-Яа-яЁё\s]+$">
+                <input class="modal-username" id="modal-name" type="name" name="username" placeholder="Представтесь,пожалуйста" pattern="^[А-Яа-яЁё\s]+$">
             </p>
             <p class="modal-form-email">
                 <label for="modal-email">Ваш e-mail:</label>
-                <input class="modal-usermail" id="modal-email" type="email" name="email" placeholder="Для отправки ответа" required>
+                <input class="modal-usermail" id="modal-email" type="email" name="email" placeholder="Для отправки ответа">
             </p>
             <p class="modal-form-text">
                 <label for="modal-text">Текст письма:</label>
                 <textarea id="modal-text" class="modal-usertext" placeholder="В свободной форме"></textarea>
             </p>
-            <button type="button" class="modal-button">Отправить</button>
-            <button class="modal-close" type="button"></button>
+            <button class="modal-button" type="submit">Отправить</button>
+            <button class="modal-close" type="button">Закрыть</button>
         </form>
     </div>
-
+    <script src="js/popup.js"></script>
 </body>
 
 </html>

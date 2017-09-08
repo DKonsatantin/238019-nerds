@@ -35,12 +35,19 @@
 
         <main class="catalog-container">
             <div class="sorting">
-                <p class="sorting-title">Сортировать:</p>
-                <ul class="sorting-list">
-                    <li><a href="#" class="sorting-text">По цене</a></li>
-                    <li><a href="#" class="sorting-text">По типу</a></li>
-                    <li><a href="#" class="sorting-text">По функционалу</a></li>
-                </ul>
+                <div class="sorting-title-warp">
+                    <p class="sorting-title">Стоимость:</p>
+                </div>
+                <div class="sorting-list-warp">
+                    <p class="sorting-list-title">Сортировать:</p>
+                    <div class="sorting-list-wraper">
+                        <ul class="sorting-list">
+                            <li><a href="#" class="sorting-text">По цене</a></li>
+                            <li><a href="#" class="sorting-text">По типу</a></li>
+                            <li><a href="#" class="sorting-text">По функционалу</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="sorting-controls">
                     <a href="#" class="down"></a>
                     <a href="#" class="up"></a>
@@ -64,29 +71,20 @@
                         </div>
                         <fieldset class="catalog-filter">
                             <legend class="catalog-filter-name">Cетка:</legend>
-                            <ul>
-                                <li class="filter-option">
-                                    <label for=""> <input type="radio"> Адаптивная</label>
-                                </li>
-                                <li class="filter-option">
-                                    <label for=""><input type="radio">Фиксированная</label>
-                                </li>
-                                <li class="filter-option">
-                                    <label for=""> <input type="radio">Резиновая</label>
-                                </li>
-                            </ul>
+                            <input id="adaptive-radio" type="radio" class="visually-hidden" checked> <label for="adaptive-radio">Адаптивная</label>
+                            <input id="fix-radio" type="radio" class="visually-hidden"><label for="fix-radio">Фиксированная</label>
+                            <input id="respon-radio" type="radio" class="visually-hidden"><label for="respon-radio">Резиновая</label>
                         </fieldset>
                         <fieldset class="catalog-filter">
                             <legend class="catalog-filter-name">Особенности:</legend>
-                            <ul>
-                                <li class="filter-option"><input type="checkbox" checked>Слайдер</li>
-                                <li class="filter-option"><input type="checkbox">Блок преимуществ</li>
-                                <li class="filter-option"><input type="checkbox" checked> Новости</li>
-                                <li class="filter-option"><input type="checkbox"> Галерея</li>
-                                <li class="filter-option"><input type="checkbox">Корзина</li>
-                            </ul>
+                            <input id="slider" type="checkbox" class="visually-hidden" checked><label for="slider">Слайдер</label>
+                            <input id="about-block" type="checkbox" class="visually-hidden"> <label for="about-block">Блок преимуществ</label>
+                            <input id="news" type="checkbox" class="visually-hidden" checked><label for="news">Новости</label>
+                            <input id="gallery" type="checkbox" class="visually-hidden"><label for="gallery">Галерея</label>
+                            <input id="basket" type="checkbox" class="visually-hidden"><label for="basket">Корзина</label>
+
                         </fieldset>
-                        <a href="#" class="filter-button">Показать</a>
+                        <button type="button" class="filter-button">Показать</button>
                     </form>
                 </section>
 
@@ -102,7 +100,7 @@
                                 <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
                                 <div class="item-description">
                                     <p class="item-title">Sedona</p>
-                                    <p class="item-text">Информационный сайт<br> для туристов</p>
+                                    <p class="item-text">Информационный сайт для туристов</p>
                                     <a href="#" class="item-price">9 900 руб.</a>
                                 </div>
                             </div>
@@ -186,15 +184,16 @@
                         </div>
 
                     </div>
+                    <div class="pagination">
+                        <a class="active-page">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a class="next" href="#">Следующая</a>
+                    </div>
                 </div>
+
             </div>
 
-            <div class="pagination">
-                <a class="active-page">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a class="next" href="#">Следующая</a>
-            </div>
 
     </div>
     </main>
@@ -228,6 +227,7 @@
 
         </footer>
     </div>
+
 </body>
 
 </html>
