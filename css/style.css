@@ -885,7 +885,7 @@ textarea:focus {
 }
 
 .price-controls input {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     width: 81px;
     margin-left: 10px;
@@ -1016,7 +1016,7 @@ textarea:focus {
     line-height: 18px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-left: 14px;
+    margin-left: 36px;
 }
 
 .sorting-list-warp {
@@ -1147,6 +1147,7 @@ textarea:focus {
 }
 
 .item-title {
+    display: block;
     font-size: 18px;
     line-height: 30px;
     margin-top: 26px;
@@ -1216,6 +1217,21 @@ textarea:focus {
     width: 44px;
     height: 44px;
     font-weight: 700;
+}
+
+.pagination a.active-page:hover {
+    background-color: #dfdfdf;
+    border-color: #dfdfdf;
+}
+
+.pagination a:hover {
+    background-color: #dfdfdf;
+}
+
+.pagination a:active {
+    background-color: #d5d5d5;
+    box-shadow: inset 0 2px 0 0 #bfbfbf;
+    color: #b7b7b7;
 }
 
 .pagination .next {
