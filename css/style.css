@@ -368,7 +368,7 @@ input[type="radio"].visually-hidden {
 .about-left-head {
     font-size: 45px;
     line-height: 45px;
-    margin-top: 73px;
+    margin-top: 77px;
     margin-bottom: 20px;
     font-weight: 500;
 }
@@ -394,6 +394,8 @@ input[type="radio"].visually-hidden {
 }
 
 .about-table {
+    margin-top: 34px;
+    padding-right: 5px;
     border-collapse: separate;
     text-align: left;
 }
@@ -429,12 +431,12 @@ input[type="radio"].visually-hidden {
 .about-right {
     width: 360px;
     background-image: url("../img/nerds-img.jpg");
-    background-position: 80% 0;
+    background-position: 100% 15%;
     background-repeat: no-repeat;
 }
 
 .about-right p {
-    margin-top: 210px;
+    margin-top: 289px;
     line-height: 24px;
     font-weight: 900;
     text-align: center;
@@ -457,7 +459,7 @@ input[type="radio"].visually-hidden {
     width: 25px;
     height: 2px;
     background-color: #fb565a;
-    margin: 0 11px 4px -37px;
+    margin: 0 5px 4px -37px;
 }
 
 .partnes {
@@ -814,6 +816,11 @@ textarea:focus {
     background: #00ca74;
 }
 
+.bar {
+    margin-left: 0;
+    width: 55%;
+}
+
 .range-controls .toggle {
     position: absolute;
     top: 30px;
@@ -828,11 +835,11 @@ textarea:focus {
 }
 
 .range-controls .toggle-min {
-    left: 50px;
+    left: 20px;
 }
 
 .range-controls .toggle-max {
-    left: 110px;
+    left: 140px;
 }
 
 .price-controls {
