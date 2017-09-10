@@ -425,7 +425,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     border-bottom: 2px solid #eee;
     padding-top: 0px;
-    padding-bottom: 50px;
+    padding-bottom: 34px;
 }
 
 .about-right {
@@ -463,9 +463,9 @@ input[type="radio"].visually-hidden {
 }
 
 .partnes {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     border-bottom: 2px solid #eeeeee;
-    min-height: 184px;
+    min-height: 164px;
 }
 
 .partnes-site {
@@ -474,11 +474,28 @@ input[type="radio"].visually-hidden {
     list-style: none;
     text-align: center;
     padding: 0;
-    padding-top: 40px;
+}
+
+.academyimg {
+    margin-top: 47px;
+}
+
+.barbershopimg {
+    margin-top: 30px;
+}
+
+.pinkimg {
+    margin-top: 49px;
+}
+
+.mishkaimg {
+    margin-top: 36px;
 }
 
 .partnes-site li {
     display: inline-block;
+    text-align: center;
+    width: 261px;
 }
 
 .partnes-site li {
@@ -520,7 +537,7 @@ input[type="radio"].visually-hidden {
 .adress {
     position: relative;
     text-align: left;
-    top: 50px;
+    top: 54px;
     left: 400px;
     width: 320px;
     height: 305px;
@@ -529,9 +546,19 @@ input[type="radio"].visually-hidden {
 }
 
 .adress-wrap {
+    width: 220px;
     position: relative;
     top: 50px;
     left: 50px;
+}
+
+.adress-line {
+    margin-top: 22px;
+    margin-bottom: 17px;
+}
+
+.adress-phone {
+    margin-top: 37px;
 }
 
 .adress b {
@@ -547,10 +574,11 @@ input[type="radio"].visually-hidden {
 }
 
 .adress-btn {
-    padding: 17px 54px;
+    padding: 17px 45px;
     border-radius: 3px;
     display: inline-block;
     text-decoration: none;
+    text-transform: uppercase;
     color: #ffffff;
     background-color: #fb565a
 }
@@ -567,13 +595,13 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     min-height: 200px;
 }
 
 .footer-social {
-    margin-top: 50px;
-    margin-right: 50px;
+    margin-top: 75px;
+    margin-right: 130px;
     display: inline-block;
     text-align: left;
 }
@@ -585,15 +613,16 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social p {
+    margin-top: 10px;
     font-size: 16px;
     line-height: 22px;
 }
 
 .footer-social-btn {
-    width: 260px;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 70px;
+    width: 269px;
 }
 
 .social {
@@ -1160,15 +1189,20 @@ textarea:focus {
     text-decoration: none;
     border-radius: 3px;
     text-transform: uppercase;
+    line-height: 50px;
+    vertical-align: middle;
     font-weight: 700;
     margin-right: 15px;
-    line-height: 18px;
     color: #000000;
     background-color: #eeeeee;
 }
 
-.active-page {
-    font-weight: bold;
+.pagination a.active-page {
+    background-color: white;
+    border: 3px solid #eeeeee;
+    width: 44px;
+    height: 44px;
+    font-weight: 700;
 }
 
 .pagination .next {
