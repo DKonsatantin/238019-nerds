@@ -1074,8 +1074,8 @@ textarea:focus {
     display: inline-block;
     background-image: url("../img/icon-down-dir.svg");
     background-repeat: no-repeat;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
 }
 
 .up::after {
@@ -1084,8 +1084,8 @@ textarea:focus {
     margin-left: 17px;
     background-image: url("../img/icon-up-dir.svg");
     background-repeat: no-repeat;
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
 }
 
 .card-wrapper {
